@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.page{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.dashboard{
+    position: sticky;
+    background-color: #F4D35E;
+    height: 100%;
+    padding: 1.5rem;
+    
+}
+.dash-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: sticky;
+}
+.options{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+.options .img{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.6rem;
+}
+.option-text{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: fantasy;
+}
+
+
+.main{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.projects{
+    background-color: #FDECEF;
+}
+/* header  */
+
+.header > .wrapper{
+    padding: 1rem;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+}
+
+.search{
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+}
+.search-wrapper{
+    
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    width: 100%;
+
+}
+.search-wrapper svg{
+    width:4%;
+}
+.search input{
+    border-radius: 1rem;
+    border: none;
+    background-color:#FDECEF;
+    flex: 1;
+    height: 24px;
+}
+
+.profile{
+    
+    display: flex;
+    padding: 1rem 2rem;
+}
+.profile-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile svg{
+    width: 8%;
+}
+
+.img-wrapper{
+    width: 2.5rem;
+    height:2.5rem;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.greeting{
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.greeting > .img-wrapper{
+    width: 3rem;
+    height: 3rem;
+}
+.hello {
+    font-weight: 700;
+    font-size: 14px;
+}
+.hello .name{
+    font-size: 20px;
+}
+.content{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content button{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #F4D35E;
+    font-weight: 600;
+}
+
+
+/* your projects  */
+
+.projects > .wrapper{
+    padding: 2rem;
+    padding-right: 3rem;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap:1rem;
+    grid-template-columns: 4fr 1fr ;
+}
+.yp-grid{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  0.1fr repeat(3,1fr);
+    gap: 24px;
+}
+.other-grid{
+    
+    display: grid;
+    grid-template-rows: 0.25fr 2fr 0.25fr 2fr;
+    gap: 0.75rem;
+}
+
+.Yp{
+    grid-column: span 2;
+}
+
+.card-wrapper{
+    background-color: blueviolet;
+    display: grid;
+   
+}
+.card p{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.yp-grid > .card{
+    background-color: ghostwhite;
+    border-radius: 0.75rem;
+    border-left: 0.5rem  solid #EE964B;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.yp-grid > .card > .icons-wrapper{
+    display: flex;
+    justify-content: end;
+    padding-top: 0.75rem;
+    gap: 2rem;
+}
+
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.announcement-wrapper{
+    background-color: ghostwhite;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: grid;
+    gap: 0.25rem;
+}
+.announcement-wrapper > .card {
+   border-bottom: 2px solid grey;
+}
+.announcement-wrapper > .card:last-child {
+    border-bottom: none;
+}
+.announcement-wrapper > .card h2 {
+    font-size: 0.9rem;
+ }
+ .announcement-wrapper > .card p {
+    font-size: 0.8rem;
+ }
+
+
+.trending-wrapper{
+    background-color: ghostwhite;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: grid;
+    gap: 0.25rem;
+}
+.trending-wrapper > .card{
+    
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.trending-wrapper > .card >.img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    
+}
+.trending-wrapper img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.name .tag{
+    color: black;
+    font-size: 1rem;
+}
+.name p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+.long{
+    width: 200vh;
+}
